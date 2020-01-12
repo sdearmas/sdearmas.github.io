@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas: ". . . . . ."
+                       ". . col1 col2 col3 ."
+                       ". . header header header .";
+                     }
+
+.container div {
+  width: -10vw;
+  align-items: stretch;
+}
+
+section {
+  padding: 30px;
+}
+
+.col-1 {
+  align-content: center;
+  margin: 20px;
+  grid-area: col1;
+}
+
+.col-2 {
+  align-content: center;
+  margin: 20px;
+  grid-area: col2;
+}
+
+.col-3 {
+  align-content: center;
+  margin: 20px;
+  grid-area: col3;
+}
+
+.row1 {
+  font-weight:700;
+  font-size: 1.15rem;
+  line-height: 1.25rem;
+  padding-bottom: 3px;
+}
+
+.row2 {
+  font-weight:100;
+  font-size: .75rem;
+  grid-column-start: 2;
+
+}
+
+.col1 {
+  font-family: Helvetica;
+  grid-gap: 12px;
+}
+.col2 {
+  font-family: Helvetica;
+  grid-gap: 12px;
+}
+.col3 {
+  font-family: Helvetica;
+  grid-gap: 12px;
+}
+
+.look {
+  font-family: 'Inknut Antiqua', serif;
+  font-weight: 800;
+  font-size: 3rem;
+  padding-bottom: -150%;
+  grid-area: header;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  grid-area: header;
+  z-index: -1;
+  margin-left: auto;
+  align-self: center;
+}
