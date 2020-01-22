@@ -14,14 +14,14 @@
 }
 
 @font-face {
-  font-family: Basis-Grotesque-Bold;
+  font-family: 'Basis-Grotesque-Bold';
   src:url(fonts/basis-grotesque-bold.ttf);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: Freight-Big-Light;
+  font-family: 'Freight-Big-Light';
   src:url(fonts/FreightBigLight.woff);
   font-style: normal;
   font-weight: 100;
@@ -29,7 +29,6 @@
 
 body{
   background-color: black;
-  width: 100%;
 }
 
 .wrapper {
@@ -38,7 +37,7 @@ body{
 }
 
 .wrapper a img {
-  width: 177px;
+  width: 7.5rem;
   margin: 25px;
 }
 
@@ -72,36 +71,48 @@ This isn't working?
 }
 
 */
-.name-location {
+/*.name-location {
   display: flex;
   position: absolute;
   right: 3%;
+} */
+
+.sub-nav {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  text-align: right;
+  font-smooth: none;
 }
 
-.name-location h1 {
+.sub-nav h1 {
   color: black;
   font-family: Fondamento-Regular;
   font-style: regular;
-  font-size: 30px;
-  margin-top: .5rem;
+  font-size: 4.2rem;
+  margin-top: .15rem;
+  margin-right: -2.25rem;
 }
 
-.name-location h2 {
+.sub-nav h2 {
   color: black;
   font-family: Freight-Big-Light;
   font-weight: 100;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-right: 15px;
 }
 
-.standard-heading {
-  position: absolute;
+.sub-nav h3 {
   left: 3%;
   color: black;
   font-family: Basis-Grotesque-Bold;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
 }
+
 
 
 /* Bob Price */
@@ -116,14 +127,14 @@ This isn't working?
   text-decoration: none;
 }
 
-.bob-price .name-location h1 {
+/* .bob-price .name-location h1 {
   margin-right: -1.25rem;
 }
 
 .bob-price .name-location h2 {
   margin: 8px 0 0 80px;
   margin-top: 1rem;
-}
+} */
 
 /* Erich Gerard Robert Kirwin */
 
@@ -137,14 +148,14 @@ This isn't working?
   text-decoration: none;
 }
 
-.erich-gerard-robert-kirwin .name-location h1 {
+/*.erich-gerard-robert-kirwin .name-location h1 {
   margin-right: -.75rem;
 }
 
 .erich-gerard-robert-kirwin .name-location h2 {
   margin: 8px 0 0 85px;
   margin-top: 1rem;
-}
+}*/
 
 /* Derek Corneau */
 
@@ -158,14 +169,14 @@ This isn't working?
   text-decoration: none;
 }
 
-.derek-corneau .name-location h1 {
+/*.derek-corneau .name-location h1 {
   margin-right: -.75rem;
 }
 
 .derek-corneau .name-location h2 {
   margin: 8px 0 0 85px;
   margin-top: 1rem;
-}
+}*/
 
 /* Nick Dempsey */
 
@@ -178,8 +189,8 @@ This isn't working?
   text-align: right;
   text-decoration: none;
 }
-
+/*
 .nick-dempsey .name-location h2 {
   margin: 8px 0 0 85px;
   margin-top: 1rem;
-}
+}*/
