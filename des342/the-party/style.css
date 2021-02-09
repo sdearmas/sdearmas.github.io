@@ -38,11 +38,17 @@
 
 .tracks {
     display: flex;
-    align-items: flex-end;
     width: 90%;
     margin: auto;
     padding-top: 5em;
+    line-break: loose;
 }
+
+.track-title {
+    width: 100%;
+}
+
+
 
 /* .track:nth-child(1){
     grid-area: t1;
