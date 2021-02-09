@@ -37,25 +37,73 @@
 }
 
 .tracks {
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    margin: auto;
+    padding-top: 5em;
+}
+
+/* .track:nth-child(1){
+    grid-area: t1;
+}
+
+.track:nth-child(2){
+    grid-area: t2;
+}
+
+.track:nth-child(3){
+    grid-area: t3;
+}
+
+.track:nth-child(4){
+    grid-area: t4;
+}
+
+.track:nth-child(5){
+    grid-area: t5;
+}
+
+.track:nth-child(6){
+    grid-area: t6;
+}
+
+.track:nth-child(7){
+    grid-area: t7;
+}
+
+.track:nth-child(8){
+    grid-area: t8;
+}
+
+.track:nth-child(9){
+    grid-area: t9;
+}
+
+.track:nth-child(10){
+    grid-area: t10;
+}
+
+.tracks {
     display: grid;
     padding: 5em 5em;
-    grid-template-columns: repeat(12, 8.333%);
-    grid-template-rows: repeat(50, 2em);
+    grid-template-columns: repeat(6, 10%);
+    grid-template-rows: repeat(10, 2em);
     grid-template-areas: 
-    "....t1t1t1.t2t2t2t2"
-    ".t3t3t3.t4t4t4.t5t5t5"
-    ".t6t6t6.t7t7t7.t8t8t8"
-    ".t9t9t9.t10t10t10.... 3"
-    ;
-}
+    ".t1.t2.t3"
+    "t4.t5.t6."
+    "t7.t8.t9."
+    "t10.....";
+    width: 100%;
+} */
 
 .track-title {
     font-family: "Favorit Pro Book";
     text-transform: uppercase;
 }
 
-.show-tracks {
-    width: 100vw;
-    
+.play-track {
+    font-size: 21px;
+    line-height: 1em;
 }
 
