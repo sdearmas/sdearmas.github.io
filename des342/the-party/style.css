@@ -6,8 +6,13 @@
 }
 
 @font-face {
+    font-family: "Favorit Pro Book";
+    src: url("des342\the-party\fonts\FavoritPro-Book.otf");
+  }
+
+@font-face {
     font-family: "Favorit Pro Light";
-    src: url("fonts\FavoritPro-Light.otf") format("opentype")
+    src: url("des342\the-party\fonts\FavoritPro-Light.otf");
   }
 
 .background {
@@ -45,7 +50,7 @@
 }
 
 .track-title {
-    font-family: "Favorit-Pro-Light";
+    font-family: "Favorit Pro Book";
     text-transform: uppercase;
 }
 
