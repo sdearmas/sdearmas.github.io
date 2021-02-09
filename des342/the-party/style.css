@@ -54,6 +54,16 @@ header {
     width: 100%;
 }
 
+.track:nth-child(1){
+    margin-left: 5.5em;
+}
+
+.nav-title {
+    font-family: "Favorit Pro Book";
+    font-size: 1.65em;
+    padding-top: 2em;
+    text-transform: uppercase;
+}
 
 
 /* .track:nth-child(1){
@@ -114,8 +124,18 @@ header {
     text-transform: uppercase;
 }
 
-.play-track {
-    font-size: 21px;
-    line-height: 1em;
+.track-title {
+    font-size: 1.65em;
+    line-height: 1.1em;
+    letter-spacing: -.5%;
 }
 
+.track-length {
+    font-family: "Favorit Pro Light";
+    font-size: .85em;
+}
+
+.divider {
+    font-family: "Favorit Pro Light";
+    font-size: 1.65em;
+}
