@@ -119,6 +119,21 @@ header {
     width: 100%;
 } */
 
+.nav-menu {
+    font-family: "Favorit Pro Book";
+    text-transform: uppercase;
+    font-size: 1.65em;
+    padding-top: 2em;
+    display: none;
+}
+
+.nav-menu:active {
+    font-family: "Favorit Pro Book";
+    text-transform: uppercase;
+    font-size: 1.65em;
+    padding-top: 2em;
+}
+
 .track-title {
     font-family: "Favorit Pro Book";
     text-transform: uppercase;
