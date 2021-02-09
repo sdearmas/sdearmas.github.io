@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "Favorit Pro Book";
-    src: url("des342\the-party\fonts\FavoritPro-Book.otf");
+    src: url("fonts/FavoritPro-Book.otf");
   }
 
 @font-face {
     font-family: "Favorit Pro Light";
-    src: url("des342\the-party\fonts\FavoritPro-Light.otf");
+    src: url("fonts/FavoritPro-Light.otf");
   }
 
 .background {
@@ -24,24 +24,30 @@
     right: 0;
 }
 
-.nav-title {
-    left: .5em;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-title, .nav-menu {
     z-index: 3999;
-    position: fixed;
-    top: .5em;
     color: #131313;
     cursor: pointer;
 }
 
+.home {
+    width: 80%;
+    margin: auto;
+}
+
 .tracks {
-    display: flex;
-    width: 90%;
+    display: inline-block;
     margin: auto;
     padding-top: 5em;
-    line-break: loose;
+}
+
+.track {
+    display: inline-block;
 }
 
 .track-title {
