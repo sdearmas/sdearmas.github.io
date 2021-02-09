@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Shauf: The Party</title>
     <link rel="stylesheet" href="style.css">
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
 </head>
-<body class="show-tracks">
+<body id="show-tracks">
 <main class="home">
     <header>
         <div class="nav-title">
@@ -19,7 +24,7 @@
     <div class="background">
     </div>
     <div class="tracks">
-            <div class="track play-track" data-track="1" data-slug="tracks/the-magician">
+            <div class="track" data-track="1" data-slug="tracks/the-magician">
                 <span class="track-title">
                     the magician
                 </span>
@@ -126,6 +131,33 @@
                     04:18
                 </span>
             </div>
+    </div>
+    <div class="player">
+        <div class="play-track" data-track="1" data-slug="tracks/the-magician">
+            <span class="track-title">
+                the magician
+            </span>
+            <span class="track-length">
+                03:51
+            </span>
+        </div>
+        <div class="track-buttons">
+            <span class="track-title buttons play">
+                play
+            </span>
+            <span class="divider">
+                |
+            </span>
+            <span class="track-title buttons prev">
+                prev
+            </span>
+            <span class="divider">
+                |
+            </span>
+            <span class="track-title buttons next">
+                next
+            </span>
+        </div>
     </div>
 </main>
 </body>

@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    overflow: hidden;
 }
 
 @font-face {
@@ -14,6 +15,22 @@
     font-family: "Favorit Pro Light";
     src: url("fonts/FavoritPro-Light.otf");
   }
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#show-tracks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
 
 .background {
     z-index: 0;
@@ -65,73 +82,12 @@ header {
     text-transform: uppercase;
 }
 
-
-/* .track:nth-child(1){
-    grid-area: t1;
-}
-
-.track:nth-child(2){
-    grid-area: t2;
-}
-
-.track:nth-child(3){
-    grid-area: t3;
-}
-
-.track:nth-child(4){
-    grid-area: t4;
-}
-
-.track:nth-child(5){
-    grid-area: t5;
-}
-
-.track:nth-child(6){
-    grid-area: t6;
-}
-
-.track:nth-child(7){
-    grid-area: t7;
-}
-
-.track:nth-child(8){
-    grid-area: t8;
-}
-
-.track:nth-child(9){
-    grid-area: t9;
-}
-
-.track:nth-child(10){
-    grid-area: t10;
-}
-
-.tracks {
-    display: grid;
-    padding: 5em 5em;
-    grid-template-columns: repeat(6, 10%);
-    grid-template-rows: repeat(10, 2em);
-    grid-template-areas: 
-    ".t1.t2.t3"
-    "t4.t5.t6."
-    "t7.t8.t9."
-    "t10.....";
-    width: 100%;
-} */
-
 .nav-menu {
     font-family: "Favorit Pro Book";
     text-transform: uppercase;
     font-size: 1.65em;
     padding-top: 2em;
     display: none;
-}
-
-.nav-menu:active {
-    font-family: "Favorit Pro Book";
-    text-transform: uppercase;
-    font-size: 1.65em;
-    padding-top: 2em;
 }
 
 .track-title {
@@ -153,4 +109,43 @@ header {
 .divider {
     font-family: "Favorit Pro Light";
     font-size: 1.65em;
+}
+
+/* Player CSS */
+
+/* .player {
+    max-width: 100%;
+    height: 100vh;
+    background-color:red;
+    display: absolute;
+    z-index: 1;
+} */
+
+.play-track:nth-child(1) {
+    position: fixed;
+    bottom: 0;
+    left: 20;
+    margin-bottom: 2em;
+    color: black;
+}
+
+.track-buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2em;
+    margin-right: 13em;
+    color: black;
+}
+
+.buttons {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.nav-menu:active {
+    font-family: "Favorit Pro Book";
+    text-transform: uppercase;
+    font-size: 1.65em;
+    padding-top: 2em;
 }
