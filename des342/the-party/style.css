@@ -56,12 +56,12 @@ header {
 
 .home {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .tracks {
   display: inline-block;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 5em;
 }
 
