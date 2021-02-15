@@ -7,6 +7,10 @@
 body {
   position: relative;
 }
+a {
+  text-decoration: none;
+  color: #131313;
+}
 @font-face {
   font-family: "Favorit Pro Book";
   src: url("fonts/FavoritPro-Book.otf");
@@ -31,6 +35,7 @@ body {
   height: 100vh;
   background: none;
 }
+
 #js-particles {
   z-index: 1;
   position: absolute;
@@ -117,6 +122,7 @@ header {
 
 .player {
   display: block;
+  display: none;
 }
 
 .play-track:nth-child(1) {
