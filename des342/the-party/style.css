@@ -1,156 +1,150 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  position: relative;
+}
+@font-face {
+  font-family: "Favorit Pro Book";
+  src: url("fonts/FavoritPro-Book.otf");
 }
 
 @font-face {
-    font-family: "Favorit Pro Book";
-    src: url("fonts/FavoritPro-Book.otf");
-  }
+  font-family: "Favorit Pro Light";
+  src: url("fonts/FavoritPro-Light.otf");
+}
 
-@font-face {
-    font-family: "Favorit Pro Light";
-    src: url("fonts/FavoritPro-Light.otf");
-  }
+/* canvas {
+    display: block;
+    vertical-align: bottom;
+} */
 
-.background {
-    z-index: 0;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    right: 0;
+#show-tracks {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: none;
+}
+#js-particles {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 120vw;
+  height: 120vh;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-title, .nav-menu {
-    z-index: 3999;
-    color: #131313;
-    cursor: pointer;
+.nav-title,
+.nav-menu {
+  z-index: 3999;
+  color: #131313;
+  cursor: pointer;
 }
 
 .home {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .tracks {
-    display: inline-block;
-    margin: auto;
-    padding-top: 5em;
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 5em;
 }
 
 .track {
-    display: inline-block;
+  display: inline-block;
 }
 
 .track-title {
-    width: 100%;
+  width: 100%;
 }
 
-.track:nth-child(1){
-    margin-left: 5.5em;
+.track:nth-child(1) {
+  margin-left: 5.5em;
 }
 
 .nav-title {
-    font-family: "Favorit Pro Book";
-    font-size: 1.65em;
-    padding-top: 2em;
-    text-transform: uppercase;
+  font-family: "Favorit Pro Book";
+  font-size: 1.65em;
+  padding-top: 2em;
+  text-transform: uppercase;
 }
-
-
-/* .track:nth-child(1){
-    grid-area: t1;
-}
-
-.track:nth-child(2){
-    grid-area: t2;
-}
-
-.track:nth-child(3){
-    grid-area: t3;
-}
-
-.track:nth-child(4){
-    grid-area: t4;
-}
-
-.track:nth-child(5){
-    grid-area: t5;
-}
-
-.track:nth-child(6){
-    grid-area: t6;
-}
-
-.track:nth-child(7){
-    grid-area: t7;
-}
-
-.track:nth-child(8){
-    grid-area: t8;
-}
-
-.track:nth-child(9){
-    grid-area: t9;
-}
-
-.track:nth-child(10){
-    grid-area: t10;
-}
-
-.tracks {
-    display: grid;
-    padding: 5em 5em;
-    grid-template-columns: repeat(6, 10%);
-    grid-template-rows: repeat(10, 2em);
-    grid-template-areas: 
-    ".t1.t2.t3"
-    "t4.t5.t6."
-    "t7.t8.t9."
-    "t10.....";
-    width: 100%;
-} */
 
 .nav-menu {
-    font-family: "Favorit Pro Book";
-    text-transform: uppercase;
-    font-size: 1.65em;
-    padding-top: 2em;
-    display: none;
-}
-
-.nav-menu:active {
-    font-family: "Favorit Pro Book";
-    text-transform: uppercase;
-    font-size: 1.65em;
-    padding-top: 2em;
+  font-family: "Favorit Pro Book";
+  text-transform: uppercase;
+  font-size: 1.65em;
+  padding-top: 2em;
+  display: none;
 }
 
 .track-title {
-    font-family: "Favorit Pro Book";
-    text-transform: uppercase;
+  font-family: "Favorit Pro Book";
+  text-transform: uppercase;
 }
 
 .track-title {
-    font-size: 1.65em;
-    line-height: 1.1em;
-    letter-spacing: -.5%;
+  font-size: 1.65em;
+  line-height: 1.1em;
+  letter-spacing: -0.5%;
 }
 
 .track-length {
-    font-family: "Favorit Pro Light";
-    font-size: .85em;
+  font-family: "Favorit Pro Light";
+  font-size: 0.85em;
 }
 
 .divider {
-    font-family: "Favorit Pro Light";
-    font-size: 1.65em;
+  font-family: "Favorit Pro Light";
+  font-size: 1.65em;
+}
+
+/* Player CSS */
+
+.player {
+  display: block;
+}
+
+.play-track:nth-child(1) {
+  position: fixed;
+  bottom: 0;
+  left: 20;
+  margin-bottom: 2em;
+  color: black;
+}
+
+.track-buttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2em;
+  margin-right: 13em;
+  color: black;
+  background: none;
+}
+
+.buttons {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.nav-menu:active {
+  font-family: "Favorit Pro Book";
+  text-transform: uppercase;
+  font-size: 1.65em;
+  padding-top: 2em;
 }

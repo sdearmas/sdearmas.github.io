@@ -1,136 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andy Shauf: The Party</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-    <!-- stats.js lib --> 
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-</head>
-<body class="show-tracks">
-<main class="home">
-    <header>
-        <div class="nav-title">
-            Andy Shauf: The Party
+    <link rel="stylesheet" href="style.css" />
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  </head>
+  <body>
+    <div id="show-tracks">
+      <main class="home">
+        <header>
+          <div class="nav-title">Andy Shauf: The Party</div>
+          <div class="nav-menu">Close</div>
+        </header>
+        <div class="tracks">
+          <div class="track" data-track="1" data-slug="tracks/the-magician">
+            <span class="track-title"> <a href="#">the magician</a> </span>
+            <span class="track-length"> 03:51 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="2" data-slug="tracks/early-to-the-party">
+            <span class="track-title"> early to the party </span>
+            <span class="track-length"> 04:05 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="3" data-slug="tracks/twist-your-ankle">
+            <span class="track-title"> twist your ankle </span>
+            <span class="track-length"> 03:46 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="4" data-slug="tracks/quite-like-you">
+            <span class="track-title"> quite like you </span>
+            <span class="track-length"> 03:25 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="5" data-slug="tracks/begin-again">
+            <span class="track-title"> begin again </span>
+            <span class="track-length"> 03:17 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="6" data-slug="tracks/the-worst-in-you">
+            <span class="track-title"> the worst in you </span>
+            <span class="track-length"> 02:55 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="7" data-slug="tracks/to-you">
+            <span class="track-title"> to you </span>
+            <span class="track-length"> 03:54 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="8" data-slug="tracks/eyes-of-them-all">
+            <span class="track-title"> eyes of them all </span>
+            <span class="track-length"> 03:54 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="9" data-slug="tracks/alexander-all-alone">
+            <span class="track-title"> alexander all alone </span>
+            <span class="track-length"> 03:58 </span>
+          </div>
+          <span class="divider"> / </span>
+          <div class="track play-track" data-track="10" data-slug="tracks/martha-sways">
+            <span class="track-title"> martha sways </span>
+            <span class="track-length"> 04:18 </span>
+          </div>
         </div>
-        <div class="nav-menu">
-            Close
+        <div class="player">
+          <div class="play-track" data-track="1" data-slug="tracks/the-magician">
+            <span class="track-title"> the magician </span>
+            <span class="track-length"> 03:51 </span>
+          </div>
+          <div class="track-buttons">
+            <span class="track-title buttons play"> play </span>
+            <span class="divider"> | </span>
+            <span class="track-title buttons prev"> prev </span>
+            <span class="divider"> | </span>
+            <span class="track-title buttons next"> next </span>
+          </div>
         </div>
-    </header>
-    <div class="background">
+      </main>
     </div>
-    <div class="tracks">
-            <div class="track play-track" data-track="1" data-slug="tracks/the-magician">
-                <span class="track-title">
-                    the magician
-                </span>
-                <span class="track-length">
-                    03:51
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="2" data-slug="tracks/early-to-the-party">
-                <span class="track-title">
-                    early to the party
-                </span>
-                <span class="track-length">
-                    04:05
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="3" data-slug="tracks/twist-your-ankle">
-                <span class="track-title">
-                    twist your ankle
-                </span>
-                <span class="track-length">
-                    03:46
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="4" data-slug="tracks/quite-like-you">
-                <span class="track-title">
-                    quite like you
-                </span>
-                <span class="track-length">
-                    03:25
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="5" data-slug="tracks/begin-again">
-                <span class="track-title">
-                    begin again
-                </span>
-                <span class="track-length">
-                    03:17
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="6" data-slug="tracks/the-worst-in-you">
-                <span class="track-title">
-                    the worst in you
-                </span>
-                <span class="track-length">
-                    02:55
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="7" data-slug="tracks/to-you">
-                <span class="track-title">
-                    to you
-                </span>
-                <span class="track-length">
-                    03:54
-                </span>
-            </div>
-            <span class="divider">
-                /
-            </span>
-            <div class="track play-track" data-track="8" data-slug="tracks/eyes-of-them-all">
-                <span class="track-title">
-                    eyes of them all
-                </span>
-                <span class="track-length">
-                    03:54
-                </span>
-            </div>
-            <span class="divider">
-                /
-                </span>
-            <div class="track play-track" data-track="9" data-slug="tracks/alexander-all-alone">
-                <span class="track-title">
-                    alexander all alone
-                </span>
-                <span class="track-length">
-                    03:58
-                </span>
-            </div>
-            <span class="divider">
-            /
-            </span>
-            <div class="track play-track" data-track="10" data-slug="tracks/martha-sways">
-                <span class="track-title">
-                    martha sways
-                </span>
-                <span class="track-length">
-                    04:18
-                </span>
-            </div>
-    </div>
-</main>
-</body>
+    <div id="particles-js"></div>
+    <script>
+      particlesJS("particles-js", { particles: { number: { value: 80, density: { enable: true, value_area: 800 } }, color: { value: "#ffffff" }, shape: { type: "circle", stroke: { width: 3, color: "#000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 120 } }, opacity: { value: 1, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } }, size: { value: 68.14501258678472, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } }, line_linked: { enable: false, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 }, move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } } }, interactivity: { detect_on: "window", events: { onhover: { enable: true, mode: "bubble" }, onclick: { enable: true, mode: "repulse" }, resize: true }, modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } } }, retina_detect: true })
+      var count_particles, update
+      count_particles = document.querySelector(".js-count-particles")
+      update = function () {
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length
+        }
+        requestAnimationFrame(update)
+      }
+      requestAnimationFrame(update)
+    </script>
+  </body>
 </html>
