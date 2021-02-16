@@ -14,7 +14,7 @@
           <div class="nav-title">Andy Shauf: The Party</div>
         </header>
         <div class="tracks">
-          <div class="track" data-track="1" data-slug="tracks/the-magician">
+          <div class="track play-track" data-track="1" data-slug="tracks/the-magician">
             <span class="track-title" data-track="1"> <a href="#">the magician</a> </span>
             <span class="track-length"> 03:51 </span>
           </div>
@@ -30,7 +30,7 @@
           </div>
           <span class="divider"> / </span>
           <div class="track play-track" data-track="4" data-slug="tracks/quite-like-you">
-            <span class="track-title" data-track="4"> quite like you </a></span>
+            <span class="track-title" data-track="4"><a href="#"> quite like you </a></span>
             <span class="track-length"> 03:25 </span>
           </div>
           <span class="divider"> / </span>
@@ -72,47 +72,47 @@
             <span class="track-length" data-track="1"> 03:51 </span>
           </div>
 
-          <div class="play-track" data-track="2" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="2" data-slug="tracks/early-to-the-party">
             <span class="track-title player-track" data-track="2"> early to the party </span>
             <span class="track-length" data-track="2"> 04:05 </span>
           </div>
 
-          <div class="play-track" data-track="3" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="3" data-slug="tracks/twist-your-ankle">
             <span class="track-title player-track" data-track="3"> twist your ankle </span>
             <span class="track-length" data-track="3"> 03:46 </span>
           </div>
 
-          <div class="play-track" data-track="4" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="4" data-slug="tracks/quite-like-you">
             <span class="track-title player-track" data-track="4"> quite like you </span>
             <span class="track-length" data-track="4"> 03:25 </span>
           </div>
 
-          <div class="play-track" data-track="5" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="5" data-slug="tracks/begin-again">
             <span class="track-title player-track" data-track="5"> begin again </span>
             <span class="track-length" data-track="5"> 03:17 </span>
           </div>
 
-          <div class="play-track" data-track="6" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="6" data-slug="tracks/the-worst-in-you">
             <span class="track-title player-track" data-track="6"> the worst in you </span>
             <span class="track-length" data-track="6"> 03:51 </span>
           </div>
 
-          <div class="play-track" data-track="7" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="7" data-slug="tracks/to-you">
             <span class="track-title player-track" data-track="7"> to you </span>
             <span class="track-length" data-track="7"> 03:54 </span>
           </div>
 
-          <div class="play-track" data-track="8" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="8" data-slug="tracks/eyes-of-them-all">
             <span class="track-title player-track" data-track="8"> eyes of them all </span>
             <span class="track-length" data-track="8"> 03:54 </span>
           </div>
 
-          <div class="play-track" data-track="9" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="9" data-slug="tracks/alexander-all-alone">
             <span class="track-title player-track" data-track="9"> alexander all alone </span>
             <span class="track-length" data-track="9"> 03:58 </span>
           </div>
 
-          <div class="play-track" data-track="10" data-slug="tracks/the-magician">
+          <div class="play-track" data-track="10" data-slug="tracks/martha-sways">
             <span class="track-title player-track" data-track="10"> martha sways </span>
             <span class="track-length" data-track="10"> 04:18 </span>
           </div>
@@ -153,7 +153,6 @@
         $(".track-buttons").hide();
         $(".player").hide();
         $("#player-animation").hide();
-        $(".player-track").show();
       });
 
       // track title player, particles and close toggle 
@@ -192,7 +191,7 @@
 
         $(".track-title:nth-child(5)").on("click", function() {
           $(".track-buttons").toggle();
-          $(".player-track:nth-child(5)").toggle();
+          $(".track-title:nth-child(5)").toggle();
           $("#player-animation").toggle();
           $(".nav-menu").show();
           $(".player").toggle();
