@@ -27,7 +27,6 @@ a {
 } */
 
 #show-tracks {
-  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,15 +35,15 @@ a {
   background: none;
 }
 
-#js-particles {
+#player-animation {
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 120vw;
-  height: 120vh;
+  width: 105vw;
+  height: 100vh;
 }
 
 header {
@@ -54,7 +53,6 @@ header {
 
 .nav-title,
 .nav-menu {
-  z-index: 3999;
   color: #131313;
   cursor: pointer;
 }
@@ -89,14 +87,6 @@ header {
   text-transform: uppercase;
 }
 
-.nav-menu {
-  font-family: "Favorit Pro Book";
-  text-transform: uppercase;
-  font-size: 1.65em;
-  padding-top: 2em;
-  display: none;
-}
-
 .track-title {
   font-family: "Favorit Pro Book";
   text-transform: uppercase;
@@ -121,19 +111,36 @@ header {
 /* Player CSS */
 
 .player {
+  z-index: 3999;
   display: block;
-  display: none;
+  position: fixed;
+  left: 20;
+  bottom: 0;
+  margin-bottom: 2em;
+}
+
+.nav-menu {
+  z-index: 100;
+  font-family: "Favorit Pro Book";
+  text-transform: uppercase;
+  font-size: 1.65em;
+  padding-top: 2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 8.5em;
 }
 
 .play-track:nth-child(1) {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 20;
-  margin-bottom: 2em;
-  color: black;
+  margin-bottom: 2em; */
+  color: #131313;
 }
 
 .track-buttons {
+  display: block;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -148,9 +155,9 @@ header {
   margin-right: 0.5em;
 }
 
-.nav-menu:active {
+/* .nav-menu:active {
   font-family: "Favorit Pro Book";
   text-transform: uppercase;
   font-size: 1.65em;
   padding-top: 2em;
-}
+} */
