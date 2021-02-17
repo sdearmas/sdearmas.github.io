@@ -132,7 +132,7 @@ header {
 }
 
 .play-track:nth-child(2) {
-  background: black;
+  /* background: black; */
 }
 
 .track-buttons {
