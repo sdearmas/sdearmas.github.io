@@ -124,16 +124,30 @@
             <span class="divider"> | </span>
             <span class="track-title buttons next"><a href="#"> next </a></span>
           </div>
+  
+            <audio class="track-01 track-stop" src="audio/Andy Shauf - The Party - 01 The Magician.mp3" type="audio/mp3"></audio>
+            <audio class="track-02 track-stop" src="audio/Andy Shauf - The Party - 02 Early To The Party.mp3" type="audio/mp3"></audio>
+            <audio class="track-03 track-stop" src="audio/Andy Shauf - The Party - 03 Twist Your Ankle.mp3" type="audio/mp3"></audio>
+            <audio class="track-04 track-stop" src="audio/Andy Shauf - The Party - 04 Quite Like You.mp3" type="audio/mp3"></audio>
+            <audio class="track-05 track-stop" src="audio/Andy Shauf - The Party - 05 Begin Again.mp3" type="audio/mp3"></audio>
+            <audio class="track-06 track-stop" src="audio/Andy Shauf - The Party - 06 The Worst In You.mp3" type="audio/mp3"></audio>
+            <audio class="track-07 track-stop" src="audio/Andy Shauf - The Party - 07 To You.mp3" type="audio/mp3"></audio>
+            <audio class="track-08 track-stop" src="audio/Andy Shauf - The Party - 08 Eyes Of Them All.mp3" type="audio/mp3"></audio>
+            <audio class="track-09 track-stop" src="audio/Andy Shauf - The Party - 09 Alexander All Alone.mp3" type="audio/mp3"></audio>
+            <audio class="track-10 track-stop" src="audio/Andy Shauf - The Party - 10 Martha Sways.mp3" type="audio/mp3"></audio>
+          
         </div>
       </main>
     </div>
 
-        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <!-- stats.js lib -->
-        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-        <!-- jQuery 3.5.1 CDN-->
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- jQuery 3.5.1 CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
     <script>
       particlesJS("player-animation", { particles: { number: { value: 300, density: { enable: true, value_area: 800 } }, color: { value: "#ffffff" }, shape: { type: "circle", stroke: { width: 3, color: "0000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 120 } }, opacity: { value: 1, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } }, size: { value: 75, random: true, anim: { enable: true, speed: 10, size_min: .1, sync: true } }, line_linked: { enable: false, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 }, move: { enable: true, speed: 10, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } } }, interactivity: { detect_on: "window", events: { onhover: { enable: true, mode: "bubble" }, onclick: { enable: true, mode: "repulse" }, resize: true }, modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 100, size: 90, duration: 1.2, opacity: 8, speed: 3 }, repulse: { distance: 500, duration: 0.9 }, push: { particles_nb: 100 }, remove: { particles_nb: 80 } } }, retina_detect: true })
@@ -146,6 +160,10 @@
         requestAnimationFrame(update)
       }
       requestAnimationFrame(update)
+    </script>
+
+    <script>
+      
     </script>
 
     <script>
@@ -164,6 +182,7 @@
           $(".the-magician").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-01").get(0).play();
           // $(".player").toggle();
         });
 
@@ -172,6 +191,7 @@
           $(".early-to-the-party").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-02").get(0).play();
           // $(".player").toggle();
         });
 
@@ -180,6 +200,7 @@
           $(".twist-your-ankle").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-03").get(0).play();
           // $(".player").toggle();
         });
 
@@ -188,6 +209,7 @@
           $(".quite-like-you").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-04").get(0).play();
           // $(".player").toggle();
         });
 
@@ -196,6 +218,7 @@
           $(".begin-again").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-05").get(0).play();
           // $(".player").toggle();
         });
 
@@ -204,6 +227,7 @@
           $(".the-worst-in-you").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-06").get(0).play();
           // $(".player").toggle();
         });
 
@@ -212,6 +236,7 @@
           $(".to-you").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-07").get(0).play();
           // $(".player").toggle();
         });
 
@@ -220,6 +245,7 @@
           $(".eyes-of-them-all").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-08").get(0).play();
           // $(".player").toggle();
         });
 
@@ -228,6 +254,7 @@
           $(".alexander-all-alone").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-09").get(0).play();
           // $(".player").toggle();
         });
 
@@ -236,6 +263,7 @@
           $(".martha-sways").show();
           $("#player-animation").toggle();
           $(".nav-menu").show();
+          $(".track-10").get(0).play();
           // $(".player").toggle();
         });
 
@@ -246,6 +274,88 @@
           $(".player-track").hide();
           $(".player-tl").hide();
           $(".nav-menu").hide();
+          $(".track-01").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-02").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-03").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-04").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-05").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-06").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-07").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-08").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-09").get(0).pause();
+        });
+
+        $(".nav-menu").on("click", function(){
+          $(".track-buttons").hide();
+          $("#player-animation").hide();
+          $(".player-track").hide();
+          $(".player-tl").hide();
+          $(".nav-menu").hide();
+          $(".track-10").get(0).pause();
         });
       });
     </script>
