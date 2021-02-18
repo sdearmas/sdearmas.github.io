@@ -20,6 +20,15 @@ a {
   font-family: "Favorit Pro Light";
   src: url("fonts/FavoritPro-Light.otf");
 }
+.track-name {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.track-tl {
+  visibility: hidden;
+  font-size: 0;
+}
 
 /* canvas {
     display: block;
