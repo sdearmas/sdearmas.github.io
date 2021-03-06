@@ -70,15 +70,19 @@
 
           <div class="play-track playerview" data-track="1" data-slug="tracks/the-magician">
             <span class="track-title player-track the-magician" data-track="1"> the magician </span>
+            <!-- <span class="track-length current-time" data-track="1"></span>
+            <span class="divider"> | </span> -->
             <span class="track-length player-tl" data-track="1"> 03:51 </span>
           </div>
 
           <div class="track-buttons">
-            <span class="track-title buttons play"><a href="#">play</a></span>
+            <span class="track-title buttons play"><a id="play">play</a></span>
             <span class="divider"> | </span>
-            <span class="track-title buttons prev"><a href="#">prev</a></span>
+            <span class="track-title buttons prev"><a id="prev">prev</a></span>
+            <sn>
             <span class="divider"> | </span>
-            <span class="track-title buttons next"><a href="#">next</a></span>
+            <span class="track-title buttons next"><a id="next">next</a></span>
+            <sn>
           </div>
   
             <audio id="the-magician" class="track-01 track-stop" src="audio/Andy Shauf - The Party - 01 The Magician.mp3" type="audio/mp3"></audio>
@@ -118,9 +122,6 @@
       // requestAnimationFrame(update)
     </script>
             <!--https://stackoverflow.com/questions/37836002/jquery-multiple-audio-player-buttons-->
-    <script src="player.js">
-    </script>
-
     <script>
       $(document).ready(function() {
         $(".track-buttons").hide();
@@ -136,21 +137,21 @@
           var trackName = $(this).parent().find(".track-name").html()
           var trackPrettyName = $(this).html()
           var trackLength = $(this).parent().find(".track-length").html()
+          var currentTick = $(this).parent().find(".track-length").html()
           console.log(trackPrettyName)
           console.log(trackLength)
           $(".track-buttons").show();
           $(".the-magician").show();
           $(".track-length").show();
-          $("#player-animation").toggle();
+          $("#player-animation").show();
           $(".nav-menu").show();
           var idName = '#' + trackName;
           console.log(idName);
-          $('#' + trackName).get(0).play();
-          $('.track-length').html(trackDuration)
-          $('.playerview .track-title').html(trackPrettyName)
+          // $('#' + trackName).get(0).play();
+          $('.player-tl').html(trackLength);
+          $('.playerview .track-title').html(trackPrettyName);
           //$(".player").toggle();
         });
-
 
         // $(".the-magician").on("click", function() {
         //   var dataTrack = $('datas-track').val();
@@ -337,6 +338,14 @@
         });
       });
     </script>
+
+<script type="text/javascript">
+  var audio = document.getElementsByClassName('.player-tl');
+  audio.addEventListener('timeupdate',function(){
+      var currentTimeMs = audio.currentTime*1000;
+      console.log(currentTimeMs);
+  },false);
+  </script>
 
   </body>
 </html>
