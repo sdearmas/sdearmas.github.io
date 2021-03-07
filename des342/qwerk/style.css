@@ -1,0 +1,242 @@
+* {
+    margin: auto 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    /* overflow: hidden; */
+    color: #FFFEFA;
+}
+
+@font-face {
+    font-family: "Radio-Grotesk-Regular";
+    src: url("fonts/RadioGrotesk-Regular.otf");
+}
+
+@font-face {
+    font-family: "Radio-Grotesk-Bold";
+    src: url("fonts/RadioGrotesk-Bold.otf");
+}
+
+@font-face {
+    font-family: "Resina-Heavy";
+    src: url("fonts/Resina-Heavy.otf");
+}
+
+@font-face {
+    font-family: "Evangelion";
+    src: url("fonts/EVANGELION REGULAR.otf");
+}
+
+@font-face {
+    font-family: "Tenebras";
+    src: url("fonts/tenebras.otf");
+}
+
+@font-face {
+    font-family: "Bagerich-Display";
+    src: url("fonts/Bagerich.otf");
+}
+
+.cart {
+    float: left;
+    padding: 2.5em 5em;
+}
+
+.cart a {
+    color: #FFFEFA;
+}
+
+.main-nav {
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .35em 3em;
+    grid-template-areas:
+    "li li"
+    "li li"
+    "li li";
+    padding: 2.5em 5em;
+    text-align: right;
+}
+
+.main-nav a {
+    color: #FFFEFA;
+}
+
+a {
+    color: #131313;
+}
+
+nav {
+    font-family: "Radio-Grotesk-Regular";
+}
+
+.logo {
+    float: right;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Resina-Heavy";
+    font-size: 2em;
+    text-align: right;
+    padding-right: 2.5em;
+    padding-top: 2em;
+}
+
+h2 a {
+    color: #FFFEFA;
+}
+
+.name {
+    grid-area: nm;
+    font-family: "Radio-Grotesk-Bold";
+}
+
+.fam {
+   grid-area: fm; 
+}
+
+.desc {
+    grid-area: ds;
+}
+
+.style {
+    grid-area: st;
+}
+
+.see-more {
+    grid-area: sm;
+}
+
+main {
+    background-color: #FF6666;
+}
+
+.type-details {
+    width: 75%;
+    padding-left: 5em;
+    padding-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "nm fm ds . ."
+    "st sm ds . .";
+    font-family: "Radio-Grotesk-Regular";
+}
+
+.type-details a {
+    color: #FFFEFA;
+}
+
+.type-display {
+    width: 90%;
+    padding-left: .125em;
+    font-size: 40em;
+    overflow: scroll;
+    padding-right: 2em;
+    font-weight: normal;
+}
+
+.bagerich {
+    font-family: "Bagerich-Display";
+}
+
+.evangelion {
+    font-family: "Evangelion";
+}
+
+.tenebras {
+    font-family: "Tenebras";
+    text-transform: uppercase;
+}
+
+.legal {
+    grid-area: lg;
+}
+
+.merch {
+    grid-area: mr;
+}
+
+.faq {
+    grid-area: fq;
+}
+
+.contact {
+    grid-area: cn;
+}
+
+footer {
+    background-color: #131313;
+    width: 100%;
+    border-top: 4px solid #FFFEFA;
+}
+
+.top-bottom-nav {
+    width: 75%;
+    padding-left: 5em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "lg mr fq cn .";
+    font-family: "Radio-Grotesk-Regular";
+}
+
+.top-bottom-nav a {
+    color: #FFFEFA;
+}
+
+.mark-alt {
+    padding-bottom: 4em;
+}
+
+.newsletter-signup-container {
+    width: 100%;
+    text-align: right;
+}
+
+.newsletter-signup {
+    display: block;
+    padding-right: 5em;
+    text-align: right;
+}
+
+.newsletter-signup input{
+    background: #FFFEFA;
+    width: 10em;
+    height: 1em;
+    padding: 1em;
+}
+
+.newsletter-headline {
+    color:#FFFEFA;
+    padding-right: 5em;
+    font-weight: normal;
+}
+
+.newsletter-headline h3 {
+    font-family: "Radio-Grotesk-Regular";
+    font-size: 3.5em;
+    font-weight: normal;
+    padding-bottom: .125em;
+}
+
+.newsletter-headline h5 {
+    font-family: "Radio-Grotesk-Regular";
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
