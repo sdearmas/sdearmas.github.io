@@ -5,20 +5,68 @@
     text-decoration: none;
 }
 
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin textShadow($text-shadow) {
+  -webkit-text-shadow: $text-shadow;
+  -moz-text-shadow: $text-shadow;
+  -ms-text-shadow: $text-shadow;
+  -o-text-shadow: $text-shadow;
+  text-shadow: $text-shadow;
+}
+
+@mixin boxShadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  -ms-box-shadow: $box-shadow;
+  -o-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin NoUserSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 body {
     width: 100%;
-    /* overflow: hidden; */
+    overflow-y: scroll;
+    overflow-x: hidden;
     color: #FFFEFA;
 }
 
 @font-face {
-    font-family: "Radio-Grotesk-Regular";
-    src: url("fonts/RadioGrotesk-Regular.otf");
+    font-family: "CoFoSansBeta-Regular";
+    src: url("fonts/CoFoSansBeta-Regular.otf");
 }
 
 @font-face {
-    font-family: "Radio-Grotesk-Bold";
-    src: url("fonts/RadioGrotesk-Bold.otf");
+    font-family: "CoFoSansBeta-Medium";
+    src: url("fonts/CoFoSansBeta-Medium.otf");
+}
+
+@font-face {
+    font-family: "CoFoSansBeta-Italic";
+    src: url("fonts/CoFoSansBeta-Italic.otf");
+}
+
+@font-face {
+    font-family: "CoFoSansBeta-Bold";
+    src: url("fonts/CoFoSansBeta-Bold.otf");
+}
+
+@font-face {
+    font-family: "CoFoSansBeta-BoldItalic";
+    src: url("fonts/CoFoSansBeta-BoldItalic.otf");
 }
 
 @font-face {
@@ -73,7 +121,7 @@ a {
 }
 
 nav {
-    font-family: "Radio-Grotesk-Regular";
+    font-family: "CoFoSansBeta-Regular";
 }
 
 .logo {
@@ -95,7 +143,7 @@ h2 a {
 
 .name {
     grid-area: nm;
-    font-family: "Radio-Grotesk-Bold";
+    font-family: "CoFoSansBeta-Bold";
 }
 
 .fam {
@@ -129,7 +177,7 @@ main {
     grid-template-areas:
     "nm fm ds . ."
     "st sm ds . .";
-    font-family: "Radio-Grotesk-Regular";
+    font-family: "CoFoSansBeta-Regular";
 }
 
 .type-details a {
@@ -192,7 +240,7 @@ footer {
     gap: 0px 0px;
     grid-template-areas:
     "lg mr fq cn .";
-    font-family: "Radio-Grotesk-Regular";
+    font-family: "CoFoSansBeta-Regular";
 }
 
 .top-bottom-nav a {
@@ -206,19 +254,25 @@ footer {
 .newsletter-signup-container {
     width: 100%;
     text-align: right;
+    display: inline-block;
 }
 
 .newsletter-signup {
-    display: block;
     padding-right: 5em;
     text-align: right;
+    margin: 0;
 }
 
 .newsletter-signup input{
     background: #FFFEFA;
-    width: 10em;
-    height: 1em;
+    width: 20em;
+    height: .99em;
     padding: 1em;
+    border-radius: 0px 10px 10px 0px;
+    font-family: "CoFoSansBeta-Regular";
+    outline-style: none;
+    font-size: .75em;
+    margin: 0;
 }
 
 .newsletter-headline {
@@ -228,15 +282,50 @@ footer {
 }
 
 .newsletter-headline h3 {
-    font-family: "Radio-Grotesk-Regular";
+    font-family: "CoFoSansBeta-Regular";
     font-size: 3.5em;
     font-weight: normal;
-    padding-bottom: .125em;
+    /* padding-bottom: .1em; */
 }
 
 .newsletter-headline h5 {
-    font-family: "Radio-Grotesk-Regular";
+    font-family: "CoFoSansBeta-Regular";
     font-size: 1em;
     font-weight: normal;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
+}
+
+.sign-up-btn {
+    background-color: #FF6666;
+    height: 1em;
+    padding: .57em;
+    border-radius: 10px 0px 0px 10px;
+    outline-style: none;
+}
+
+.sign-up-btn a {
+    font-family: "CoFoSansBeta-Medium";
+    color: #FFFEFA;
+    font-size: .75em;
+    margin: 0;
+}
+
+.newsletter-signup-container {
+    padding-bottom: 5em;
+    display: inline-block;
+}
+
+.bottom {
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .35em 3em;
+    grid-template-areas:
+    "li li"
+    "li li"
+    "li li";
+    padding: 2.5em 5em;
+    text-align: left;
+    font-family: "CoFoSansBeta-Regular";
 }
