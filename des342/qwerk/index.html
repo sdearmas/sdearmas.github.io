@@ -104,7 +104,7 @@
                     <a href="#">See More</a>
                 </li>
             </ul>
-            <h1 class="type-display tenebras">Tenebras</h1>
+            <h1 class="type-display tenebras" id="tenebras">Tenebras</h1>
         </div>
     </main>
 
@@ -166,20 +166,24 @@
     <div class="cursor"></div>
     <script>
         const cursor = document.querySelector('.cursor')
+        
+        let tenebras = document.getElementById("tenebras");
 
         document.addEventListener('mousemove', e => {
             cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
         })
 
-        document.addEventListener('mouseover', () => {
+        tenebras.addEventListener('mouseenter', () => {
             cursor.classList.add("expand");
-
-            setTimeout(()=> {
-                cursor.classList.remove("expand");
-            }, 2500)
         })
 
+        // {
+        //     cursor.classList.remove("expand");
+        // })
 
+        tenebras.addEventListener('mouseleave', () => {
+                cursor.classList.remove("expand");
+            }, 25)
     </script>
 </body>
 </html>
