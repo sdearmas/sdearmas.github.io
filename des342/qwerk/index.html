@@ -83,6 +83,19 @@
         </ul>
         <h1 id="tenebras" class="type-display tenebras">Tenebras</h1>
       </div>
+
+      <div class="typeface">
+        <ul class="type-details">
+          <li class="name">Tenebras</li>
+          <li class="fam">Complete Family</li>
+          <li class="desc">Tenebras is a sans serif display uppercase typeface inspired by art...</li>
+          <li class="style">1 style, 2 set</li>
+          <li class="see-more">
+            <a href="#">See More</a>
+          </li>
+        </ul>
+        <h1 class="type-display tenebras" id="tenebras">Tenebras</h1>
+      </div>
     </main>
 
     <footer>
@@ -156,7 +169,7 @@
       document.addEventListener("mousemove", e => {
         cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
       })
-      let title = document.getElementById("tenebras")
+      let tenebras = document.getElementById("tenebras")
 
       tenebras.addEventListener("mouseenter", () => {
         cursor.classList.add("expand")

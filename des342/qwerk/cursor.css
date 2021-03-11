@@ -1,7 +1,3 @@
-body {
-  cursor: none;
-}
-
 .hide {
   opacity: 0;
   transition: 1s all;
