@@ -1,0 +1,43 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  cursor: none;
+  -webkit-transition-duration: 50ms;
+          transition-duration: 50ms;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@-webkit-keyframes cursorAnim1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(40);
+            transform: scale(40);
+  }
+}
+
+@keyframes cursorAnim1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(40);
+            transform: scale(40);
+  }
+}
+
+.expand {
+  -webkit-animation: cursorAnim1 .25s forwards;
+          animation: cursorAnim1 .25s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/*# sourceMappingURL=cursor.css.map */

@@ -5,38 +5,6 @@
     text-decoration: none;
 }
 
-@mixin transition($transition){
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -ms-transition: $transition;
-  -o-transition: $transition;
-  transition: $transition;
-}
-
-@mixin textShadow($text-shadow) {
-  -webkit-text-shadow: $text-shadow;
-  -moz-text-shadow: $text-shadow;
-  -ms-text-shadow: $text-shadow;
-  -o-text-shadow: $text-shadow;
-  text-shadow: $text-shadow;
-}
-
-@mixin boxShadow($box-shadow) {
-  -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
-  -ms-box-shadow: $box-shadow;
-  -o-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
-}
-
-@mixin NoUserSelect {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
 body {
     width: 100%;
     overflow-y: scroll;
