@@ -312,22 +312,22 @@
         </div>
     </footer>
 </div>
-    <!-- <script>
+    <script>
         const cursor = document.querySelector('.cursor')
-        
-        let tenebras = document.getElementById("tenebras");
 
         document.addEventListener('mousemove', e => {
             cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
         })
-
+        
+        let tenebras = document.getElementById("tenebras");
+        
         tenebras.addEventListener('mouseenter', () => {
             cursor.classList.add("expand");
         })
 
-        tenebras.addEventListener('mouseout', () => {
+        tenebras.addEventListener('mouseleave', () => {
             cursor.classList.remove("expand");
         })
-    </script> -->
+    </script>
 </body>
 </html>
