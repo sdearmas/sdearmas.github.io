@@ -297,3 +297,16 @@ footer {
     text-align: left;
     font-family: "CoFoSansBeta-Regular";
 }
+
+.overlay-main {
+    opacity: 25%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.td-overlay {
+    grid-template-areas:
+    "nm fm ds . ."
+    "st sm . . .";
+}
