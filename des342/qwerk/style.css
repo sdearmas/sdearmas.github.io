@@ -250,14 +250,13 @@ footer {
 
 .newsletter-headline h3 {
   font-family: "CoFoSansBeta-Regular";
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: normal;
   /* padding-bottom: .1em; */
 }
 
 .newsletter-headline h5 {
   font-family: "CoFoSansBeta-Regular";
-  font-size: 1em;
   font-weight: normal;
   padding-bottom: 0.5em;
 }
@@ -298,14 +297,61 @@ footer {
 }
 
 .overlay-main {
-    opacity: 25%;
-    z-index: 1;
-    position: absolute;
-    top: 0;
+  clip-path: url(".cursor")
+  display: block;
+  /* visibility: hidden; */
+  /* z-index: -1; */
+  position: absolute;
+  top: 0;
+}
+
+.overlay-main-larger:hover{
+  clip-path: circle(350px at var(--x) var(--y));
+}
+
+.overlay-main-smaller{
+    clip-path: circle(75px at var(--x) var(--y));
+}
+
+.overlay-main a {
+  color: #ff6666;
 }
 
 .td-overlay {
     grid-template-areas:
     "nm fm ds . ."
     "st sm . . .";
+    color: #ff6666;
+}
+
+.typeface-details {
+  width: 60%;
+  height: 18.99em;
+  padding-left: 3em;
+  padding-top: 1em;
+  font-size: 2em;
+  overflow: scroll;
+  padding-right: 2em;
+  font-weight: normal;
+  font-family: "CoFoSansBeta-Regular";
+  color: #ff6666;
+}
+
+
+
+.td-evangelion {
+  height: 21em;
+  color: #ff6666;
+}
+
+.overlay {
+  background-color: #fffefa;
+}
+
+.overlay-nav {
+  opacity: 0%;
+}
+
+.home-screen {
+  /* z-index: 1; */
 }

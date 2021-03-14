@@ -1,8 +1,3 @@
-.hide {
-  opacity: 0;
-  transition: 1s all;
-}
-
 .cursor {
   width: 20px;
   height: 20px;
@@ -10,8 +5,10 @@
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  transition-duration: 50ms;
-  transition-timing-function: ease-out;
+  -webkit-transition-duration: 50ms;
+          transition-duration: 50ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   pointer-events: none;
 }
 
@@ -26,41 +23,61 @@
   left: -8px;
 }
 
+@-webkit-keyframes cursorAnim1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(30);
+            transform: scale(30);
+  }
+}
+
 @keyframes cursorAnim1 {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
-    transform: scale(40);
+    -webkit-transform: scale(30);
+            transform: scale(30);
   }
 }
+
+@-webkit-keyframes cursorAnim2 {
+  from {
+    -webkit-transform: scale(30);
+            transform: scale(30);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @keyframes cursorAnim2 {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(30);
+            transform: scale(30);
   }
   to {
-    transform: scale(0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
-@keyframes cursorAnim3 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
+
 .expand {
-  animation: cursorAnim1 0.5s forwards;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-animation: cursorAnim1 0.45s forwards;
+          animation: cursorAnim1 0.45s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.type-details {
-  opacity: 0;
+.normal {
+  -webkit-animation: cursorAnim2 0.25s forwards;
+          animation: cursorAnim2 0.25s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 /*# sourceMappingURL=cursor.css.map */

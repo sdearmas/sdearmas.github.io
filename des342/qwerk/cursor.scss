@@ -1,3 +1,6 @@
+// body {
+//   cursor: none;
+// }
 
 .cursor {
   width: 20px;
@@ -20,7 +23,6 @@
   opacity: 0.5;
   top: -8px;
   left: -8px;
-
 }
 
 
@@ -29,36 +31,25 @@
     transform: scale(1);
   }
   to {
-    transform: scale(40);
+    transform: scale(30);
   }
 }
 
 @keyframes cursorAnim2 {
   from {
-    transform: scale(1);
+    transform: scale(30);
   }
   to {
-    transform: scale(0.4);
-  }
-}
-
-@keyframes cursorAnim3 {
-  0% {
     transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
   }
 }
 
 .expand {
-  animation: cursorAnim1 0.5s forwards;
+  animation: cursorAnim1 0.45s forwards;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.type-details {
-  opacity: 0;
+
+.normal {
+  animation: cursorAnim2 0.25s forwards;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
