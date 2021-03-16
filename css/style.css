@@ -4,12 +4,17 @@
 @font-face {
 	font-family: "Favorit Pro Book";
 	src: url("fonts/FavoritPro-Book.otf");
-}
+   }
+  
+@font-face {
+	font-family: "Favorit Pro Italic";
+	src: url("fonts/FavoritPro-Italic.otf");
+   }
 
 @font-face {
 	font-family: "Favorit Pro Bold";
-	src: url("fonts/FavoritPro-Bold.otf");  
-}
+	src: url("fonts/FavoritPro-Bold.otf");
+   }
 
 body {
 	font-family: "Favorit Pro Book";
@@ -52,7 +57,6 @@ a:hover { color: Tomato; }
 header, nav, main, footer {
 	width: 90%;
 	margin:auto;
-	max-height: 100%;
 }
 
 
@@ -87,7 +91,7 @@ nav a:hover { color: tomato; }
 
 .project-container {
 	/* width: 90%; */
-	height: 100vh;
+	height: 20%;
 }
 
 .project-titles ul {
@@ -96,18 +100,17 @@ nav a:hover { color: tomato; }
 }
 
 .work-links {
-	display: flex;
-	justify-content: flex-end;
-	float: left;
+	/* float: left; */
 }
 
 .project-name {
 	grid-area: pn;
+	font-size: 1.35em;
 }
 
 .project-desc {
 	grid-area: pd;
-	line-height: 1.75em;
+	line-height: 1.5em;
 }
 
 .project-screen {
@@ -116,10 +119,10 @@ nav a:hover { color: tomato; }
 
 .tools {
 	grid-area: tl;
+
 }
 
 .tools span {
-	font-family: "Favorit Pro Bold";
 }
 
 .the-party {
@@ -133,7 +136,7 @@ nav a:hover { color: tomato; }
 	  "ps ps"
 	  "tl .";
 	border-top: 2px solid black;
-	padding-top: 1em;
+	padding-top: 2.5em;
 	padding-bottom: 5em;
 	width: 100%;
 }
@@ -149,8 +152,8 @@ nav a:hover { color: tomato; }
 	  "ps ps"
 	  "tl .";
 	border-top: 2px solid black;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 2.5em;
+	padding-bottom: 5em;
 	width: 100%;
 }
 
@@ -166,10 +169,76 @@ nav a:hover { color: tomato; }
 	margin: 0 auto;
 }
 
+.animation-triggers {
+	grid-area: at;
+}
+
+.media-queries {
+	grid-area: mq;
+}
+
+.horizontal-scroll {
+	grid-area: hs;
+}
+
+.opw {
+	grid-area: op;
+}
+
+.assign-screen-opw {
+	grid-area: ao;
+}
+
+.assign-screen-hs {
+	grid-area: ah;
+}
+
+.assign-screen-mq {
+	grid-area: am;
+}
+
+.assign-screen-at {
+	grid-area: aa;
+}
+
+.work-links {
+	/* position: relative; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	  "op hs mq at"
+	  "ao ah am aa";
+	width: 100%;
+	height: 20em;
+	padding-top: 2em;
+	text-align: center;
+}
+
+.assignment-header {
+	display: inline-block;
+	font-size: 3em;
+	width: 100%;
+	text-align: left;
+	border-top: 2px solid black;
+	padding-top: 1em;
+	padding-bottom: 1.25em;
+}
+
+.assignment-container {
+	/* position: absolute; */
+	/* width: 90%; */
+	height: 50vh;
+}
+
+.screen-img {
+	width: 100%;
+}
+
 .header-links {
-	display: flex;
+	/* display: flex;
 	justify-content: flex-end;
-	align-items: baseline;
+	align-items: baseline; */
 }
 
 /* Footer styles */
@@ -178,5 +247,99 @@ footer {
 	color: rgb(17, 17, 17);
 	text-align: center;
 	font-size: .75em;
+	padding-bottom: 3em;
  }
  /* footer p { padding: 20px; } */
+
+
+/* Media Queries */
+
+ @media screen and (max-width: 768px) {
+
+	.project-header {
+		height: 5em;
+		font-size: 3em;
+	}
+
+	.logo {
+		font-size: 1.5em;
+		margin-top:-.23em;
+	}
+
+    .the-party {
+		float: left;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		  "pn"
+		  "pd"
+		  "ps"
+		  "tl";
+		border-top: 2px solid black;
+		padding-top: 2.5em;
+		padding-bottom: 5em;
+		width: 100%;
+	}
+
+	.qwerk {
+		float: left;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		  "pn"
+		  "pd"
+		  "ps"
+		  "tl";
+		border-top: 2px solid black;
+		padding-top: 2.5em;
+		padding-bottom: 5em;
+		width: 100%;
+	}
+
+	.project-desc {
+		grid-area: pd;
+		line-height: 1.5em;
+		width: 95%;
+		padding-top: 2.5em;
+		padding-bottom: 5vh;
+	}
+
+	.project-screen {
+		grid-area: ps;
+		max-width: 95%;
+		padding-bottom: 10vh;
+	}
+
+	.work-links {
+		/* position: relative; */
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		  "op"
+		  "ao"
+		  "hs"
+		  "ah"
+		  "mq"
+		  "am"
+		  "at"
+		  "aa";
+		width: 95%;
+		height: 20em;
+		padding-top: 2em;
+		text-align: center;
+	}
+
+	.work-links li {
+		padding-bottom: 5em;
+	}
+
+	nav {
+		text-align: right;
+		float: right;
+		width: 10%;
+	}
+
+	.site-header {
+		align-content: baseline;
+	}
+}
